@@ -1,0 +1,128 @@
+/* Product attrubite */
+products: {
+  "id":213213,
+  "name": "Extra Slim Fit Easy Care 1Mx",
+  "code":"#YR2455485",
+  "price": 13.34,
+  "slug": "Extra-Slim-Fit-Easy-Care-1Mx",
+  "brand": "Nick",
+  "collections":[
+    {"name" :"Men Cloths", "slug": "Men-Cloths"},
+    {"name":"New Arrivals" , "slug": "New-Arrivals"}
+  ],
+  "colors":["blue","red","green"],
+  "size":["S","L","blue"],
+  "quntity": 5,
+  "images":[
+    {"id":213213,"path":"images/files/image.png"},
+    {"id":213213,"path":"images/files/image1.png"}
+  ],
+  "visibility": true,
+  "publish_at": "12/08/2018",
+  "is_daleted": false
+}
+
+/* Collections attrubite */
+collections:{
+  "id": 23421,
+  "name":"Women collections",
+  "slug":"women-collections",
+  "images":[
+    {"id":213213,"path":"images/files/image.png"},
+    {"id":213213,"path":"images/files/image1.png"}
+  ],
+  "visibility": true,
+  "is_daleted": false
+}
+
+/* Brand */
+brands: {
+  "id": 23421,
+  "name":"Women collections",
+  "slug":"women-collections",
+  "images":[
+    {"id":213213,"path":"images/files/image.png"},
+    {"id":213213,"path":"images/files/image1.png"}
+  ],
+  "is_daleted": false
+}
+
+/* files store attrubite*/
+files_store:{
+  "id": 24234234,
+  "path":"storages/images/images1232.png",
+  "size": 23423,
+  "type":"png",
+  "is_daleted":false
+}
+
+/*Orders*/
+orders:{
+  "id":12321,
+  "code": "#CODE21343",
+  "total_quntity": 5,
+  "total_amount": 54.3,
+  "customer":{
+    "id":24234,
+    "name":"Seam Phanith",
+    "phone":"24324324",
+    "email":"phanithsiam@example.com",
+  },
+  "products":[
+    {"id":234234,"name":"woment Cloths","price"},
+    {"id":234234,"name":"woment Cloths","price"},
+    {"id":234234,"name":"woment Cloths","price"}
+  ],
+  "payment_type":{
+    "id":23432,
+    "name":"Strip"
+  },
+  "status":
+  {
+    "Waiting"
+  }
+
+}
+/*
+  Remake for status
+  - Waiting
+  - Cancel
+  - Aprove
+  -
+*/
+
+/* users */
+
+users:{
+  "id":23423,
+  "first_name":"Seam",
+  "last_name":"Phanith",
+  "phone":[
+    "09090345",
+    "09098234",
+    "............."
+  ],
+  "adress":"St.07, Kampong Siam, Kampong Cham",
+  "lactions":"Kampong Cham",
+  "password": "sfdj23423jkl2lk42klj3l",
+  "is_admin":true
+}
+
+/*
+Users remake
+- field is_admin can modify only adminstrator
+- adminstrator can create role for all user
+*/
+
+/* Roles */
+roles:
+[
+  {
+  "id":234324,
+  "name":"Product Creator",
+  "permissions":[
+    {"id":234234,"name":"create_products"},
+    {"id":234234,"name":"update_products"},
+  ]
+  }
+]
