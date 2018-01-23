@@ -1,0 +1,21 @@
+{
+    "name": "softquantum/laravel-preset-bootstrap4",
+    "description": "Laravel 5.5 Front-end preset for Bootstrap 4 and Bootstrap Native",
+    "keywords": ["laravel", "preset", "bootstrap 4", "bootstrap native", "scaffolding"],
+    "license": "MIT",
+    "require": {
+        "laravel/framework": "5.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Softquantum\\Bootstrap4Preset\\": "src/"
+        }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "Softquantum\\Bootstrap4Preset\\Bootstrap4PresetServiceProvider"
+       ]
+      }
+    }
+}
